@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="jquery.modal.min.css">
 </head>
 
-<body>
+<body onLoad="populateDomFromAPI()">
 	<header>
 		<div class="row" id="header">
 			<div class="col-holder">
@@ -151,47 +151,26 @@
 										<div class="modal-stats">
 											<div class="stat-box">
 												<p>Expected APY</p>
-												<p class="stat-value">1-40%</p>
+												<p class="stat-value" id="1_apy">1-40%</p>
 											</div>
 											<div class="stat-box">
 												<p>Commission</p>
-												<p class="stat-value">0%</p>
+												<p class="stat-value" id="1_comission">0%</p>
 											</div>
 											<div class="stat-box">
 												<p>Token Price</p>
-												<p class="stat-value">14.88$</p>
+												<p class="stat-value" id="1_price">14.88$</p>
 											</div>
 											<div class="stat-box">
 												<p>Total Amount Delegated</p>
-												<p class="stat-value">112233</p>
+												<p class="stat-value" id="1_total_delegation">112233</p>
 											</div>
 										</div>
-										<div class="modal-links">
-											<a class="website-link" href="#" target="_blank">www.project-website.com</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
+										<div class="modal-links" id="1_links">
 										</div>
 									</div>
 
-									<div class="modal-bottom">
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
+									<div class="modal-bottom" id='1_validators'>
 									</div>
 
 								</div>
@@ -227,47 +206,26 @@
 										<div class="modal-stats">
 											<div class="stat-box">
 												<p>Expected APY</p>
-												<p class="stat-value">1-40%</p>
+												<p class="stat-value" id="2_apy">1-40%</p>
 											</div>
 											<div class="stat-box">
 												<p>Commission</p>
-												<p class="stat-value">0%</p>
+												<p class="stat-value" id="2_comission">0%</p>
 											</div>
 											<div class="stat-box">
 												<p>Token Price</p>
-												<p class="stat-value">14.88$</p>
+												<p class="stat-value" id="2_price">14.88$</p>
 											</div>
 											<div class="stat-box">
 												<p>Total Amount Delegated</p>
-												<p class="stat-value">112233</p>
+												<p class="stat-value" id="2_total_delegation">112233</p>
 											</div>
 										</div>
-										<div class="modal-links">
-											<a class="website-link" href="#" target="_blank">www.project-website.com</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
+										<div class="modal-links" id="2_links">
 										</div>
 									</div>
 
-									<div class="modal-bottom">
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
+									<div class="modal-bottom" id="2_validators">
 									</div>
 
 								</div>
@@ -302,47 +260,27 @@
 										<div class="modal-stats">
 											<div class="stat-box">
 												<p>Expected APY</p>
-												<p class="stat-value">1-40%</p>
+												<p class="stat-value" id="3_apy">1-40%</p>
 											</div>
 											<div class="stat-box">
 												<p>Commission</p>
-												<p class="stat-value">0%</p>
+												<p class="stat-value" id="3_comission">0%</p>
 											</div>
 											<div class="stat-box">
 												<p>Token Price</p>
-												<p class="stat-value">14.88$</p>
+												<p class="stat-value" id="3_price">14.88$</p>
 											</div>
 											<div class="stat-box">
 												<p>Total Amount Delegated</p>
-												<p class="stat-value">112233</p>
+												<p class="stat-value" id="3_total_delegation">112233</p>
 											</div>
 										</div>
-										<div class="modal-links">
-											<a class="website-link" href="#" target="_blank">www.project-website.com</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
+										<div class="modal-links" id="3_links">
 										</div>
 									</div>
 
-									<div class="modal-bottom">
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
+									<div class="modal-bottom" id="3_validators">
+										
 									</div>
 
 								</div>
@@ -377,47 +315,27 @@
 										<div class="modal-stats">
 											<div class="stat-box">
 												<p>Expected APY</p>
-												<p class="stat-value">1-40%</p>
+												<p class="stat-value" id="4_apy">1-40%</p>
 											</div>
 											<div class="stat-box">
 												<p>Commission</p>
-												<p class="stat-value">0%</p>
+												<p class="stat-value" id="4_comission">0%</p>
 											</div>
 											<div class="stat-box">
 												<p>Token Price</p>
-												<p class="stat-value">14.88$</p>
+												<p class="stat-value" id="4_price">14.88$</p>
 											</div>
 											<div class="stat-box">
 												<p>Total Amount Delegated</p>
-												<p class="stat-value">112233</p>
+												<p class="stat-value" id="4_total_delegation">112233</p>
 											</div>
 										</div>
-										<div class="modal-links">
-											<a class="website-link" href="#" target="_blank">www.project-website.com</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
+										<div class="modal-links" id="4_links">
 										</div>
 									</div>
 
-									<div class="modal-bottom">
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
+									<div class="modal-bottom" id="4_validators">
+										
 									</div>
 
 								</div>
@@ -457,47 +375,27 @@
 										<div class="modal-stats">
 											<div class="stat-box">
 												<p>Expected APY</p>
-												<p class="stat-value">1-40%</p>
+												<p class="stat-value" id="5_apy">1-40%</p>
 											</div>
 											<div class="stat-box">
 												<p>Commission</p>
-												<p class="stat-value">0%</p>
+												<p class="stat-value" id="5_comission">0%</p>
 											</div>
 											<div class="stat-box">
 												<p>Token Price</p>
-												<p class="stat-value">14.88$</p>
+												<p class="stat-value" id="5_price">14.88$</p>
 											</div>
 											<div class="stat-box">
 												<p>Total Amount Delegated</p>
-												<p class="stat-value">112233</p>
+												<p class="stat-value" id="5_total_delegation">112233</p>
 											</div>
 										</div>
-										<div class="modal-links">
-											<a class="website-link" href="#" target="_blank">www.project-website.com</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
-											<a class="doc-link" href="#" target="_blank">Project documentation</a>
+										<div class="modal-links" id="5_links">
 										</div>
 									</div>
 
-									<div class="modal-bottom">
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
-										<div class="validator-row">
-											<div class="validator-name">
-												<p>Validator Name Here</p>
-											</div>
-											<div class="validator-links">
-												<a class="address-btn" href="#">Copy Address</a>
-												<a class="stake-btn" href="#">Stake Now</a>
-											</div>
-										</div>
+									<div class="modal-bottom" id="5_validators">
+										
 									</div>
 
 								</div>
@@ -702,6 +600,10 @@
 					<div class="col-1">
 						<div class="col-content">
 							<h2 class="section-title">CONTACT US</h2>
+							
+
+
+
 						</div>
 					</div>
 				</div>
@@ -824,7 +726,7 @@
 	}
    </script>
 
-
+   <!-- open modal -->
    <script>
         $(document).ready(function () {
             $("a.open-modal").click(function () {
@@ -865,5 +767,27 @@
             })
         })
     </script>
+
+    <!-- copy text -->
+    <script type="text/javascript">
+    	// copy function
+
+	function copyBtn() {
+  			/* Get the text field */
+  			var copyText = document.getElementById(`copy_address_4`);
+
+  			/* Select the text field */
+  			copyText.select();
+  			copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  			/* Copy the text inside the text field */
+  			document.execCommand("copy");
+ 
+		}
+
+    </script>
+
+    <!-- network api -->
+    <script src="js/networks.js"></script>
 </body>
 </html>

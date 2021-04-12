@@ -101,6 +101,10 @@ div:focus, li:focus, section:focus {
 		color: #fff;
 	}
 
+	.hidden {
+		display: none;
+	}
+
 	/* ---- header ---- */
 
 	header {
@@ -549,6 +553,10 @@ div:focus, li:focus, section:focus {
 
 	.validator-row:last-child {
 		margin-bottom: 0;
+	}
+
+	.validator-name {
+		padding-top: 10px;
 	}
 
 	.validator-name, .validator-links {
