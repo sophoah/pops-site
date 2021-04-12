@@ -30,6 +30,10 @@ function fillTile(id) {
 	if (element_apy !== undefined) {
 		element_apy.innerHTML = `${data.APY}%`;
 	}
+	const element_apy_front = document.getElementById(`${id}_apy_front`);
+	if (element_apy_front !== undefined) {
+		element_apy_front.innerHTML = `${data.APY}%`;
+	}
 	const element_comission = document.getElementById(`${id}_comission`);
 	if (element_comission !== undefined) {
 		element_comission.innerHTML = `${data.Fees}%`;
