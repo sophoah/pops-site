@@ -48,7 +48,7 @@ function fillTile(id) {
 	if (element_links !== undefined) {
 		element_links.appendChild(createLink(data.Project_website, data.Project_website, 'website-link'))
 		for (url of data.Project_documentations) {
-			element_links.appendChild(createLink('Project documentation', url, 'doc-link'));	
+			element_links.appendChild(createLink(url, url, 'doc-link'));	
 		}
 	}
 
