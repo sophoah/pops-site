@@ -4,19 +4,6 @@ function populateDomFromAPI(){
 	fetch('http://api.data.pops.one:81/networks')
 	.then(response => response.json())
 	.then((jsonResponse) => {
-Expand
-networks.js
-4 KB
-for making stake now links open in new tab
-soph — Today at 18:11
-hey guys, let me look at this
-﻿
-const idToItemMap = {}
-
-function populateDomFromAPI(){
-	fetch('http://api.data.pops.one:81/networks')
-	.then(response => response.json())
-	.then((jsonResponse) => {
 		for (const index in jsonResponse) {
 			const item = jsonResponse[index]
 			idToItemMap[item.ID] = item;
