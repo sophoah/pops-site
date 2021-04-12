@@ -1,7 +1,7 @@
 const idToItemMap = {}
 
 function populateDomFromAPI(){
-	fetch('http://api.data.pops.one:81/networks')
+	fetch('https://api.data.pops.one/networks')
 	.then(response => response.json())
 	.then((jsonResponse) => {
 		for (const index in jsonResponse) {
